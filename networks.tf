@@ -21,7 +21,6 @@ resource "aws_subnet" "x3iibits-subnet-public-1" {
   }
 }
 
-
 resource "aws_internet_gateway" "x3iibits-igw" {
   vpc_id = aws_vpc.x3iibits-vpc.id
 
