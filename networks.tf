@@ -12,7 +12,7 @@ resource "aws_vpc" "x3iibits-vpc" {
 
 resource "aws_subnet" "x3iibits-subnet-public-1" {
   vpc_id                  = aws_vpc.x3iibits-vpc.id
-  cidr_block              = "10.0.1.0/20"
+  cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = true
   availability_zone       = "eu-central-1a"
 
