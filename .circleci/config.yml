@@ -18,7 +18,6 @@ jobs:
           docker push ozharkov/cicd:latest
           echo "Build is Done"
 
-jobs:
   plan-apply:
     working_directory: /tmp/project
     docker:
