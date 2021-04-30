@@ -32,7 +32,6 @@ resource "local_file" "circle_credentials" {
 resource "aws_iam_user_policy" "circleci" {
   name   = "AllowCircleCI"
   user   = aws_iam_user.circleci.name
-  policy = data.template_file.circleci_policy.rendered
 }
 
 resource "aws_instance" "EC2" {
